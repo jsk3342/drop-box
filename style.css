@@ -1,0 +1,114 @@
+@font-face {
+  font-family: roboto;
+  src: url(font/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+  font-family: roboto;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  background-color: #fff;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 0 14px;
+}
+
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.dropdown {
+  width: 200px;
+  margin: 71px auto;
+  position: relative;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  background-color: inherit;
+  border: 1px solid #c4c4c4;
+  transition: border-color 100ms ease-in;
+  position: relative;
+}
+.dropdown-toggle:hover {
+  outline: 1px solid #9b51e0;
+}
+
+.dropdown-toggle:focus::before {
+  content: "";
+  border: 1px solid #9b51e0;
+  border-radius: 10px;
+  outline: 5px solid rgb(245, 197, 245);
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.dropdown-toggle::after {
+  content: "";
+  background-image: url(icon-Triangle-down.png);
+  width: 10px;
+  height: 10px;
+  float: right;
+  margin-top: 15px;
+}
+
+/* 드랍다운 메뉴 */
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 0;
+  background-color: #fff;
+  overflow: hidden;
+  border: 1px solid transparent;
+
+  border-radius: 14px;
+  transition: border-color 200ms ease-in, padding 200ms ease-in,
+    max-height 200ms ease-in, box-shadow 200ms ease-in;
+}
+
+.dropdown-menu.show {
+  margin: 9px 0;
+  max-height: 280px;
+  border-color: #c4c4c4;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-option {
+  width: 100%;
+  height: 40px;
+  padding: 0 18px;
+  line-height: 40px;
+  border-radius: 14px;
+}
+
+.dropdown-option:hover {
+  background-color: #f8e4ff;
+  border-radius: 8px;
+}
