@@ -4,6 +4,9 @@
 
 https://jsk3342.github.io/drop-box/
 
+![drop-box](https://user-images.githubusercontent.com/85912592/163736854-264e2410-1a2c-468e-a22d-d829fa96dbe8.gif)
+
+
 ## 목표
 
 제한적인 select 옵션에서 벗어나 button 요소를 활용하여 드랍박스를 구현
