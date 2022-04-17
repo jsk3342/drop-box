@@ -2,6 +2,8 @@
 
 상기 프로젝트는 하단의 링크를 통해 확인 가능합니다.
 
+https://jsk3342.github.io/drop-box/
+
 ## 목표
 
 제한적인 select 옵션에서 벗어나 button 요소를 활용하여 드랍박스를 구현
